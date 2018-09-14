@@ -8,10 +8,10 @@
 			<p><a href="/alida/">ALiDa Cloud</a>: linked datasets on Amsterdam history</p>
 		</div>
 		<div class="highlight" id="highlight3">
-			<a href="https://tiles.amsterdamtimemachine.nl">
+			<a href="/3d/">
 				<img src="<?= get_theme_file_uri( '/assets/images/3d.png' ) ?>" />
 			</a>
-			<p>3D: <a href="">reconstructing</a> Amsteram</p>
+			<p>3D: <a href="/3d/">reconstructing</a> Amsterdam</p>
 		</div>
 		<div class="highlight" id="highlight2">
 			<a href="https://tiles.amsterdamtimemachine.nl">
