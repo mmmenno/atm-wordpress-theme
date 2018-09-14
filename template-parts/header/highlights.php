@@ -2,8 +2,10 @@
 	<div style="margin-top: 30px;"></div>
 	<div id="highlights" class="content-area">
 		<div class="highlight" id="highlight1">
-			<img src="<?= get_theme_file_uri( '/assets/images/alida.png' ) ?>" />
-			<p><a href="">ALiDa Cloud</a>: linked datasets on Amsterdam history</p>
+			<a href="/alida/">
+				<img src="<?= get_theme_file_uri( '/assets/images/alida.png' ) ?>" />
+			</a>
+			<p><a href="/alida/">ALiDa Cloud</a>: linked datasets on Amsterdam history</p>
 		</div>
 		<div class="highlight" id="highlight3">
 			<a href="https://tiles.amsterdamtimemachine.nl">
