@@ -3430,7 +3430,7 @@ p > object:only-child {
 	/* Site Branding */
 
 	.site-branding {
-		margin-bottom: 0;
+		margin-bottom: 56px;
 	}
 
 	.has-header-image.twentyseventeen-front-page .site-branding,
