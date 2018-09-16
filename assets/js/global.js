@@ -93,7 +93,7 @@
 			if ( isFrontPage ) {
 				$branding.css( 'margin-bottom', '48px' );
 			} else {
-				$customHeader.css( 'margin-bottom', '48px' );
+				$customHeader.css( 'margin-bottom', '56px' );
 			}
 
 		} else {
