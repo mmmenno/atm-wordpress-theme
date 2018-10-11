@@ -5,7 +5,7 @@
 			<a href="/alida/">
 				<img src="<?= get_theme_file_uri( '/assets/images/alida.png' ) ?>" />
 			</a>
-			<p><a href="/alida/">ALiDa Cloud</a>: linked datasets on Amsterdam history</p>
+			<p>LOD: linked datasets on Amsterdam history in the <a href="/alida/">ALiDa Cloud</a></p>
 		</div>
 		<div class="highlight" id="highlight3">
 			<a href="/3d/">
@@ -17,7 +17,7 @@
 			<a href="https://tiles.amsterdamtimemachine.nl">
 				<img src="<?= get_theme_file_uri( '/assets/images/maptiles.png' ) ?>" />
 			</a>
-			<p>Maps: <a href="https://tiles.amsterdamtimemachine.nl">go back in time</a>, use these tiles.</p>
+			<p>Go <a href="https://tiles.amsterdamtimemachine.nl">back in time</a> with these tiles or <a href="/maps/">read more on maps</a></p>
 		</div>
 	</div>
 </div>
