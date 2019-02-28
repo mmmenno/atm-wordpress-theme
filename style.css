@@ -3414,7 +3414,8 @@ p > object:only-child {
 
 	.has-sidebar:not(.error404) #primary {
 		float: left;
-		width: 58%;
+/*		width: 58%;
+*/
 	}
 
 	.has-sidebar #secondary {
@@ -4375,4 +4376,12 @@ p > object:only-child {
 	.site-footer {
 		padding: 0;
 	}
+}
+
+#headernav a {
+ color: rgba(255,255,255,255) !important;
+}
+.institu img {
+border: 4px solid green;
+padding: 12px;
 }

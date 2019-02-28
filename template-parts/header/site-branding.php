@@ -45,4 +45,9 @@
 	<?php endif; ?>
 
 	</div><!-- .wrap -->
+<?php
+
+
+///<div style="position: absolute; bottom: 40px; right: 50px; width: 100px; text-align: center; background: rgb(200,200,0,100);" id="headernav"><?=$loginoutlink? ></div>
+?>
 </div><!-- .site-branding -->

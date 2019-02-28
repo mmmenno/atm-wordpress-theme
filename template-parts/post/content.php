@@ -23,9 +23,9 @@
 		if ( 'post' === get_post_type() ) {
 			echo '<div class="entry-meta">';
 				if ( is_single() ) {
-					twentyseventeen_posted_on();
+		//			twentyseventeen_posted_on();
 				} else {
-					echo twentyseventeen_time_link();
+		//			echo twentyseventeen_time_link();
 					twentyseventeen_edit_link();
 				};
 			echo '</div><!-- .entry-meta -->';
@@ -36,7 +36,11 @@
 		} elseif ( is_front_page() && is_home() ) {
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		} else {
+			$categories = get_the_category();
+			$category_id = $categories[0]->cat_ID;
+if($category_id != 31){
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+}
 		}
 		?>
 	</header><!-- .entry-header -->
@@ -51,18 +55,32 @@
 
 	<div class="entry-content">
 		<?php
-		/* translators: %s: Name of current post */
-		the_content( sprintf(
+		if ( is_single() ) :
+			/* translators: %s: Name of current post */
+			the_content( sprintf(
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+				get_the_title()
+			) );
+
+			wp_link_pages( array(
+				'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+				'after'       => '</div>',
+				'link_before' => '<span class="page-number">',
+				'link_after'  => '</span>',
+			) );
+		else :
+			the_excerpt( sprintf(
 			__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
 			get_the_title()
-		) );
+			) );
 
-		wp_link_pages( array(
+			wp_link_pages( array(
 			'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
 			'after'       => '</div>',
 			'link_before' => '<span class="page-number">',
 			'link_after'  => '</span>',
-		) );
+			) );
+		endif;
 		?>
 	</div><!-- .entry-content -->
 

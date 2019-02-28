@@ -584,3 +584,22 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2);
+function add_login_logout_link($items, $args) {
+        ob_start();
+        wp_loginout('index.php');
+        $loginoutlink = ob_get_contents();
+        ob_end_clean();
+        //$items .= '<li style="border: 6px solid #8CA494 !important;" >'. $loginoutlink .'</li>';
+        $items .= '<li>'. $loginoutlink .'</li>';
+        //$items .= '<li style="border: 6px solid #67C3AF !important;" >'. $loginoutlink .'</li>';
+$categories = get_the_category();
+$category_id = $categories[0]->cat_ID;
+//echo $category_id;
+if($category_id == 22){
+$items .= '<li><a href="https://amsterdamtimemachine.nl/wp-admin/post-new.php">Add project</a>';
+}
+    return $items;
+}
+
