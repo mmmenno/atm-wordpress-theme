@@ -5,7 +5,7 @@
 			<a href="https://tiles.amsterdamtimemachine.nl">
 				<img src="<?= get_theme_file_uri( '/assets/images/maptiles.png' ) ?>" />
 			</a>
-			<p><a href="/maps/">Maps</a></p>
+			<p><a href="/category/data/maps/">Maps</a></p>
 		</div>
 		<div class="highlight" id="highlight3">
 			<a href="/3d/">
